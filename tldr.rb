@@ -1,4 +1,4 @@
-class tldr < Formula
+class Tldr < Formula
   desc "fast and interactive tldr client written with go"
   homepage "https://github.com/isacikgoz/tldr"
   url "https://github.com/isacikgoz/tldr/releases/download/v0.5.0/tldr_0.5.0_darwin_amd64.tar.gz"
