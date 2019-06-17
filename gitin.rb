@@ -1,14 +1,14 @@
 class Gitin < Formula
   desc "commit/branch/workdir explorer for git"
   homepage "https://github.com/isacikgoz/gitin"
-  url "https://github.com/isacikgoz/gitin/releases/download/v0.1.5/gitin_0.1.5_darwin_amd64.tar.gz"
-  version "0.1.5"
-  sha256 "111cf7e178fcfe8dc6fdee0766458b0c8c4de345eb87aa9b6ca982fdfc5ac798"
+  url "https://github.com/isacikgoz/gitin/releases/download/v0.2.0/gitin_0.2.0_darwin_amd64.tar.gz"
+  version "0.2.0"
+  sha256 "576361e3553fdd82569df145f807c0be0c09072250aeb900b4a2c5474752ed3b"
   depends_on "libgit2"
 
   if OS.linux? && Hardware::CPU.is_64_bit?
-    url "https://github.com/isacikgoz/gitin/releases/download/v0.1.5/gitin_0.1.5_linux_amd64.tar.gz"
-    sha256 "3b29e931972d4a104d41ccc49e74e62eb38f4c50c78cc8f660a702626ca372bc"
+    url "https://github.com/isacikgoz/gitin/releases/download/v0.2.0/gitin_0.2.0_linux_amd64.tar.gz"
+    sha256 "65c413e3417c60f8d1d3418a1f8b59141122eb882b031633ac6d141b15ce23b5"
   end
 
   def install
@@ -16,6 +16,6 @@ class Gitin < Formula
   end
 
   test do
-    assert_match "gitin version 0.1.5", shell_output("#{bin}/gitin --version", 2)
+    assert_match "gitin version 0.2.0", shell_output("#{bin}/gitin --version", 2)
   end
 end
