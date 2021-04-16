@@ -3,11 +3,11 @@ class Gitbatch < Formula
   homepage "https://github.com/isacikgoz/gitbatch"
   url "https://github.com/isacikgoz/gitbatch/releases/download/v0.6.1/gitbatch_0.6.1_darwin_amd64.tar.gz"
   version "0.6.1"
-  sha256 "15669722171ffbed641db6e54f22f3fdd1e62259990a6532f4e069dfe99752ec"
+  sha256 "53616f0bf98000009e76f2ae81eddf1e67c3a02d8817f680187985da98aab85d"
 
   if OS.linux? && Hardware::CPU.is_64_bit?
     url "https://github.com/isacikgoz/gitbatch/releases/download/v0.6.1/gitbatch_0.6.1_linux_amd64.tar.gz"
-    sha256 "0f627110b57f1541e2fb8130ae5017b202e78673bda3e12e9f743f74e5e31228"
+    sha256 "af7a3938d4de9e9b4a7bb155d21e6d5d16f831d596e590c42701a19a02ae95ca"
   end
 
   def install
